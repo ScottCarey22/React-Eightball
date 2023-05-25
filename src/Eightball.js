@@ -13,22 +13,21 @@ const Eightball = (prop) => {
     const [msg, setMsg] = useState("Think of a Question.")
     const [color, setColor] = useState("black");
 
-    // const Counter = () => {
-    //     const [count, setCount] = useState(0);
-    //     setCount = count + 1
 
-    // }
 
     const restart = () => {
         setColor('black');
         setMsg('Think of a Question.')
+        // setCount(0)
     }
 
     const Clicker = () => {
         const { msg, color } = getAnswer(prop.answers);
+        // const { count, setCount } = useState(0)
         setMsg(msg);
         setColor(color);
         // setCount(count + 1)
+
     };
     return (
         <>
